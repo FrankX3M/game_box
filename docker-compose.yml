@@ -1,0 +1,9 @@
+services:
+  telegram_bot:
+    build: .
+    container_name: game_box_bot
+    restart: always
+    volumes:
+      - ./data:/app/data
+    environment:
+      - TZ=Europe/Moscow
